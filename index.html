@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="quizApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz App</title>
+	<link rel="stylesheet" href="public/css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300">
+</head>
+<body>
+	<header class='navbar navbar-default'> 
+		<ul>
+			<li><a ui-sref="home">Home</a></li>
+		</ul>
+	</header>
+	{{test}}
+
+	<ui-view></ui-view>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/angular.ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="app.js"></script>
+	<script src="components/home/homeCtrl.js"></script>
+	<script src="components/quiz/quizCtrl.js"></script>
+	<script src="components/results/resultsCtrl.js"></script>
+	<script src="components/services/quizService.js"></script>
+</body>
+</html>
